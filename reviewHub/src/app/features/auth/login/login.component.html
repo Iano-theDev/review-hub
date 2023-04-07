@@ -1,1 +1,18 @@
-<p>login works!</p>
+<div class="container">
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+        <h3>Log in</h3>
+        <div class="input-container">
+            <label for="email" >Email</label>
+            <input type="email" name="email" ngModel #email="ngModel" required email pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <span class="invalid-entry" *ngIf="email.touched && email.invalid">Input a valid email address</span>
+        </div>
+        <div class="input-container">
+            <label for="password">Password</label>
+            <input type="password" name="password" ngModel #password="ngModel" required>
+            <span class="invalid-entry" *ngIf="password.touched && password.invalid">Check password, field cant be empty</span>
+        </div>
+        <div class="submit">
+            <button class="log-in">Log in</button>
+        </div>
+    </form>
+</div>
