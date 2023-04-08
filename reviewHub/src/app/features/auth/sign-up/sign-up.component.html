@@ -1,1 +1,23 @@
-<p>sign-up works!</p>
+<div class="container">
+    <form #signUp="ngForm" (ngSubmit)="onSubmit(signUp)">
+        <h3>Sign up</h3>
+        <div class="input-container">
+            <label for="username">Username</label>
+            <input type="text" name="username" ngModel required #username="ngModel">
+            <span class="invalid-entry" *ngIf="username.touched && username.invalid">Input a valid username, field can not be emmpty</span>
+        </div>
+        <div class="input-container">
+            <label for="email">Email</label>
+            <input type="email" name="email" ngModel required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" #email="ngModel" >
+            <span class="invalid-entry" *ngIf="email.touched && email.invalid">Enter a valid email address</span>
+        </div>
+        <div class="input-container">
+            <label for="password">Password</label>
+            <input type="password" name="password" ngModel required #password="ngModel">
+            <span class="invalid-entry" *ngIf="password.touched && password.invalid">Enter a valid password</span>
+        </div>
+        <div class="btn">
+            <button>Sign up</button>
+        </div>
+    </form>
+</div>
