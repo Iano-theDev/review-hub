@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from "./features/auth/login/login.component";
 import { SignUpComponent } from "./features/auth/sign-up/sign-up.component";
+import { FooterComponent } from "./shared/components/footer/footer.component";
 
 @NgModule({
     declarations: [
@@ -16,7 +17,8 @@ import { SignUpComponent } from "./features/auth/sign-up/sign-up.component";
         BrowserModule,
         AppRoutingModule,
         LoginComponent,
-        SignUpComponent
+        SignUpComponent,
+        FooterComponent
     ]
 })
 export class AppModule { }
