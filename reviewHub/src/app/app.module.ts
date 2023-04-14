@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from "./features/auth/login/login.component";
 import { SignUpComponent } from "./features/auth/sign-up/sign-up.component";
 import { FooterComponent } from "./shared/components/footer/footer.component";
+import { HeaderComponent } from "./shared/components/header/header.component";
 
 @NgModule({
     declarations: [
@@ -18,7 +19,8 @@ import { FooterComponent } from "./shared/components/footer/footer.component";
         AppRoutingModule,
         LoginComponent,
         SignUpComponent,
-        FooterComponent
+        FooterComponent,
+        HeaderComponent
     ]
 })
 export class AppModule { }
