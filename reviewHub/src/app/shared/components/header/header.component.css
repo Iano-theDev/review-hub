@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    background: #000000;
+    font-family: 'Merriweather', serif;
+}
+
+.logo
+span {
+    color: #ffb700;
+}
+
+.logo:hover{
+    color: #ffb700;
+    transition: .3s ease;
+}
+
+.logo
+span:hover {
+    color: #fff;
+}
+
+.categories a,
+.auth-area a{
+    text-decoration: none;
+    color: #fff;
+    transition: .5s ease;
+}
+
+.categories a,
+.auth-area a:hover{
+    text-decoration: none;
+    color: #ffb700;
+}
+
+.auth-area {
+    display: flex;
+    gap: 2em;
+}
