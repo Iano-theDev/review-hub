@@ -7,6 +7,8 @@ import { LoginComponent } from "./features/auth/login/login.component";
 import { SignUpComponent } from "./features/auth/sign-up/sign-up.component";
 import { FooterComponent } from "./shared/components/footer/footer.component";
 import { HeaderComponent } from "./shared/components/header/header.component";
+import { HomeComponent } from "./features/home/home.component";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
@@ -20,7 +22,9 @@ import { HeaderComponent } from "./shared/components/header/header.component";
         LoginComponent,
         SignUpComponent,
         FooterComponent,
-        HeaderComponent
+        HeaderComponent,
+        HomeComponent,
+        BrowserAnimationsModule
     ]
 })
 export class AppModule { }
