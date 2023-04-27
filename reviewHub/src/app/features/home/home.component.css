@@ -1,0 +1,10 @@
+.container{
+    height: 50vh;
+    border: 1px solid red;
+    padding: 1em;
+}
+
+.search {
+    border: 1px solid blue;
+    padding: 1em;
+}
